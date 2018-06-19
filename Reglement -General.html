@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-1">R&egrave;glement General</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="info">INFRACTIONS</th>
+                                <th class="info">PREMI&Egrave;RE SANCTION</th>
+                                <th class="info">R&Eacute;CIDIVE</th>
+                                <th class="info">TRIPLE R&Eacute;CIDIVE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="success">Spam et pulicit&eacute;</td>
+                                <td class="warning">R&eacute;duit au silence (3 heures)</td>
+                                <td class="warning">R&eacute;duit au silence (48 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Insulte</td>
+                                <td class="warning">R&eacute;duit au silence (4 heures)</td>
+                                <td class="warning">R&eacute;duit au silence (6 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Discrimination et racisme</td>
+                                <td class="warning">R&eacute;duit au silence (24 heures)</td>
+                                <td class="warning">R&eacute;duit au silence (48 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Menace</td>
+                                <td class="warning">R&eacute;duit au silence (12 heures)</td>
+                                <td class="warning">R&eacute;duit au silence (24 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Contenu Pornographique</td>
+                                <td class="warning">Cas par cas, selon la mod&eacute;ration</td>
+                                <td class="warning">Cas par cas, selon la mod&eacute;ration</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Pseudonyme inappropri&eacute;</td>
+                                <td class="danger">Bannissement (2 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Use-bug *</td>
+                                <td class="danger">Bannissement (6 heures)</td>
+                                <td class="danger">Bannissement (24 heures)</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Triche cheat</td>
+                                <td class="danger">Bannissement definitif</td>
+                                <td class="danger">Bannissement definitif</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                            <tr>
+                                <td class="success">Autre(s)</td>
+                                <td class="warning">Cas par cas, selon la mod&eacute;ration</td>
+                                <td class="warning">Cas par cas, selon la mod&eacute;ration</td>
+                                <td class="danger">Bannissement definitif</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // <![CDATA[
+        /*function check(e)
+                {
+                alert(e.keyCode);
+                }*/
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117 || e.keyCode === 111)) { //Alt+c, Alt+v will also be disabled sadly.
+                alert('Vous avez pas le droit de faire cette action !');
+            }
+            return false;
+        };
+        // ]]>
+    </script>
+    <script>
+        // <![CDATA[
+        document.oncontextmenu = new Function("return false");
+        // ]]>
+    </script>
+
+
+
+
+</body>
+
+</html>
